@@ -7,6 +7,10 @@
 
 #header-navbar-main {
   background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  z-index: 100;
+  position: absolute;
+  top: 0;
 }
 
 #nav-logo {
