@@ -10,7 +10,7 @@ class Controller
         include 'pages/layout/scripts.php';
         if ($footer)
         {
-            include 'pages/layout/footer.php';
+            // include 'pages/layout/footer.php';
         }
     }
 }

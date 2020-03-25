@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    @import url('https://fonts.googleapis.com/css?family=Barlow+Condensed&display=swap');
+    ul
+    {
+        display: flex;
+        /* flex-direction: column; */
+        list-style: none;
+        height: 70vh;
+    }
+    .item
+    {
+        position: relative;
+        width: 90%;
+        flex: 1;
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+        background-repeat: none;
+        transition: flex 0.8s ease;
+    }
+    .item:hover
+    {
+       flex: 10; 
+    }
+    .item-1
+    {
+        background-image: url("../../../assets/aikido1.jpg");
+    }
+    .item-2
+    {
+        background-image: url("../../../assets/aikido2.jpeg");
+    }
+    .item-3
+    {
+        background-image: url("../../../assets/aikido3.jpeg");
+    }
+    .item-4
+    {
+        background-image: url("../../../assets/ryuji.jpg");
+    }
+    .item-5
+    {
+        background-image: url("../../../assets/waka.jpg");
+    }
+    /* .item input
+    {
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+    } */
+    /* .item input:checked, .item
+    {
+        flex: 7;
+    } */
+  
+    
+
+  
+
+    </style>
+</head>
+<body>
+    <div class="accordian">
+        <ul>
+            <li class="item item-1">
+               <h3>TEXTO</h3>
+            </li>
+            <li class="item item-2">
+               <h3>TEXTO</h3>
+            </li>
+            <li class="item item-3">
+               <h3>TEXTO</h3>
+            </li>
+            <li class="item item-4">
+               <h3>TEXTO</h3>
+            </li>
+            <li class="item item-5">
+               <h3>TEXTO</h3>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
