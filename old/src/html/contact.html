@@ -16,38 +16,24 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            transition: all ease-in-out .5s;
         }
         .layout-line
         {
             display: flex;
         }
-        #box-slider,
-        #box-list,
-        .line-2,
-        .line-3
-        {
-            width: 45%;
-            height: 450px;
-            margin: 15px auto;
-        }  
         #box-slider
         {
+            width: 600px;
+            height: 450px;
+            margin: 15px 25px;
             background: red;
         }
         #box-list
         {
+            width: 600px;
+            height: 450px;
+            margin: 15px 25px;
             background: green;
-        }
-        .line-2
-        {
-            width: 95%;
-            background: blue;
-        }
-        .line-3
-        {
-            width: 95%;
-            background: yellow;
         }
         @media screen and (max-width: 1000px)
         {
@@ -56,32 +42,40 @@
                 display: flex;
                 flex-direction: column;
             }
-            #box-slider,
-            #box-list,
-            .line-2,
-            .line-3
+            #box-slider
             {
-                width: 75%;
+                width: 70%;
                 height: 450px;
-            }  
-            
+                margin: 15px auto;
+            }
+            #box-list
+            {
+                width: 70%;
+                height: 500px;
+                margin: 15px auto;
+            }
         }
 
-        @media screen and (max-width: 650px) 
+        @media screen and (max-width: 600px) 
         {   
             .layout-line
             {
                 display: flex;
                 flex-direction: column;
             }
-            #box-slider,
-            #box-list,
-            .line-2,
-            .line-3
+            #box-slider
             {
                 width: 95%;
                 height: 300px;
-            }     
+                margin: 15px auto;
+            }
+            #box-list
+            {
+                width: 95%;
+                height: 300px;
+                margin: 15px auto;
+            }
+            
         }
     </style>
 
