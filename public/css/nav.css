@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css?family=Barlow+Condensed&display=swap');
+:root
+{
+    --base-color-blue: #188cdf;
+    --base-color-yellow: #FABB4E;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header
+{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    background: rgba(0, 0, 0, .6);
+}
+
+header nav
+{
+    margin-right: 100px;
+}
+
+header nav ul
+{
+    list-style: none;
+    text-transform: uppercase;
+    font-family: 'Barlow Condensed';
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 25px 10px 0;
+}
+
+header nav ul li
+{
+    width: 80px;
+    text-align: center;
+}
+
+header nav ul li:hover
+{
+    border-bottom: .5px solid var(--base-color-yellow);
+    background: rgba(0, 0, 0, 0);
+    animation-duration: 1s;
+}
+
+header nav ul li:hover .navlink
+{
+    color: #000 !important;
+}
+
+header nav ul li .navlink 
+{
+    text-decoration: none;
+    color: black;
+}
+
+@media screen and (max-width: 850px) 
+{
+    header nav 
+    {
+       display: none;
+    }
+}
+
+
+#hamburger-menu
+{
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-right: 25px;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 400px) 
+{
+    #hamburger-menu 
+    {
+        margin-right: 35px;
+        margin-left: 25px;
+    }
+
+    #nav-banner
+    {
+        margin-left: 25px !important;
+    }
+}
+
+#nav-banner
+{
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 100px;
+    margin-bottom: 10px;
+}
+
+#nav-logo
+{
+    background: var(--base-color-yellow);
+    font-family: 'Barlow Condensed';
+    min-width: 70px;
+    min-height: 60px;
+    width: 70px;
+    height: 62px;
+    border-radius: 3px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+}
+
+#nav-logo img
+{
+    width: 60px;
+} 
+
+#nav-title
+{
+    margin: 0 5px;
+}
+
+#nav-title h5, 
+#nav-title h6 
+{
+    color: black;
+    width: 100px;
+    margin: 2px;
+}
+
+#nav-title h6
+{
+    font-size: xx-small;
+}
+
+#nav-title h5
+{
+    border-bottom: 0.5px solid black;
+}
+.active-link
+{
+    border-radius: 1px;
+    background-color: var(--base-color-yellow);
+}
+/* .active-link > a
+{
+    color: #FFF !important;
+} */

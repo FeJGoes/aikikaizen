@@ -7,7 +7,6 @@ Sinta-se a vontade para sugestões e críticas.
 
 #### Tecnologias utilizadas: 
 - HTML5 / CSS3 / JavaScript
-- SASS 
 - UIKIT
-- PHP 
+- PHP 7.4
 

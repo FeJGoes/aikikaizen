@@ -1,9 +1,7 @@
 <?php
-require './public/Controller.php';
 
-$request = str_replace('/aikikaizen/','',$_SERVER['REQUEST_URI']);
-$title = 'home';
-Controller::renderPage($request, $title, true);
+require 'configs/constants.php';
+require 'routes/routes.php';
 
 
-?>
+new Router(str_replace('/site-aikikaizen','',$_SERVER['REQUEST_URI']));
