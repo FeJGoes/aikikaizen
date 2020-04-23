@@ -3,7 +3,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#000">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
+    <link rel="shortcut icon" href="<?=HOST.IMGS_DIR."aikido-ico.ico"?>">
     <link rel="stylesheet" type="text/css" href="<?=HOST.CSS_DIR.'logo.css?v='.filemtime(CSS_DIR.'logo.css')?>">
     <link rel="stylesheet" type="text/css" href="<?=HOST.CSS_DIR.'burger.css?v='.filemtime(CSS_DIR.'burger.css')?>">
     <link rel="stylesheet" type="text/css" href="<?=HOST.CSS_DIR.'nav.css?v='.filemtime(CSS_DIR.'nav.css')?>">

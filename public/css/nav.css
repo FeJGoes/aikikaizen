@@ -3,6 +3,9 @@
 {
     --base-color-blue: #188cdf;
     --base-color-yellow: #FABB4E;
+    --base-color-background: #282a36;
+    --base-color-title: #44475a;
+    --base-color-text: #f8f8f2;
 }
 
 *
@@ -19,12 +22,25 @@ header
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    background: rgba(0, 0, 0, .6);
+    background: var(--base-color-background);
 }
 
 header nav
 {
     margin-right: 100px;
+}
+
+@media (max-width: 960px) 
+{
+    header nav
+    {
+        margin-right: 10px !important;
+    }
+
+    #nav-banner
+    {
+        margin-left: 10px !important;
+    }
 }
 
 header nav ul
@@ -44,32 +60,18 @@ header nav ul li
     text-align: center;
 }
 
-header nav ul li:hover
+header nav ul li:hover,
+.navbar-link:hover
 {
     border-bottom: .5px solid var(--base-color-yellow);
-    background: rgba(0, 0, 0, 0);
     animation-duration: 1s;
-}
-
-header nav ul li:hover .navlink
-{
-    color: #000 !important;
 }
 
 header nav ul li .navlink 
 {
     text-decoration: none;
-    color: black;
+    color:var(--base-color-text);
 }
-
-@media screen and (max-width: 850px) 
-{
-    header nav 
-    {
-       display: none;
-    }
-}
-
 
 #hamburger-menu
 {
@@ -82,7 +84,7 @@ header nav ul li .navlink
     margin-bottom: 10px;
 }
 
-@media screen and (max-width: 400px) 
+@media (max-width: 400px) 
 {
     #hamburger-menu 
     {
@@ -136,7 +138,7 @@ header nav ul li .navlink
 #nav-title h5, 
 #nav-title h6 
 {
-    color: black;
+    color: var(--base-color-text);
     width: 100px;
     margin: 2px;
 }
@@ -148,14 +150,35 @@ header nav ul li .navlink
 
 #nav-title h5
 {
-    border-bottom: 0.5px solid black;
+    border-bottom: 0.5px solid var(--base-color-text);
 }
+
 .active-link
 {
     border-radius: 1px;
     background-color: var(--base-color-yellow);
 }
-/* .active-link > a
+
+.active-link > a,
+.active-link:hover > a
 {
-    color: #FFF !important;
-} */
+    color: var(--base-color-title) !important;
+}
+
+.uk-offcanvas-bar {
+    background: var(--base-color-background) !important;
+}
+
+.navbar-link {
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--base-color-text) !important;
+}
+
+#offcanvas-menu .uk-offcanvas-close {
+    color: var(--base-color-yellow);
+}
+
+#offcanvas-menu .uk-offcanvas-close:hover {
+    color: var(--base-color-title);
+}

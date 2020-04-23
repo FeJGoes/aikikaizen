@@ -20,7 +20,7 @@ class HomeController
         /**
          * @method array setCss() Acrescenta os arquivos css nesta requisição
          */
-        // $Controller->setCss(['logo.css','nav.css']);
+        $Controller->setCss(['home.css']);
 
          /**
          * @method array setJs() Acrescenta os arquivos scripts Javascript nesta requisição
@@ -30,7 +30,7 @@ class HomeController
          /**
          * @method array setView() Acrescenta os arquivos de views nesta requisição
          */
-        $Controller->setView(['home.php']);
+        // $Controller->setView(['home.php']);
    
         $Controller->render($title,'',false);
     }

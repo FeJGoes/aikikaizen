@@ -15,7 +15,7 @@ class ContatoController
         /**
          * @var $title innerText da TAG <title>
          */
-        $title = 'Contato - AikiKaizen';
+        $title = 'Contato - AikiKaizen - Rio Claro';
 
         /**
          * @method array setCss() Acrescenta os arquivos css nesta requisição

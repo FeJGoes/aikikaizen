@@ -9,10 +9,10 @@
         </div>
     </div>
     
-    <nav class="uk-visible@m">
+    <nav class="uk-visible@s">
         <ul>  
             <li <?= strstr($_SERVER['REQUEST_URI'],'/aikido') ?'class="active-link"': "" ?>>
-                <a class="navlink" href="<?=HOST.'aikido'?>">aikido</a>
+                <a class="navlink" href="<?=HOST.'aikido'?>">Sobre Aikido</a>
             </li>
             <li <?= strstr($_SERVER['REQUEST_URI'],'/aikikaizen') ?'class="active-link"': "" ?>>
                 <a class="navlink" href="<?=HOST.'aikikaizen'?>">aikikaizen</a>
@@ -28,11 +28,12 @@
             </li>
         </ul>
     </nav>
-    <div id="hamburger-menu" class="uk-hidden@m">
+    <div id="hamburger-menu" class="uk-hidden@s">
         <div class="burger three" uk-toggle="target: #offcanvas-nav" onclick="this.classList.toggle('activated'); setTimeout(()=>{this.classList.toggle('activated')},1000)">
             <span></span>
             <span></span>
             <span></span>
         </div>
     </div>
+    
 </header>

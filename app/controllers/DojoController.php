@@ -15,7 +15,7 @@ class DojoController
         /**
          * @var $title innerText da TAG <title>
          */
-        $title = 'Dojo - Rio Claro';
+        $title = 'Dojo - AikiKaizen - Rio Claro';
 
         /**
          * @method array setCss() Acrescenta os arquivos css nesta requisição

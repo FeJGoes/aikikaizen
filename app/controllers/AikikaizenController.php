@@ -15,7 +15,7 @@ class AikikaizenController
         /**
          * @var $title innerText da TAG <title>
          */
-        $title = 'Escola AikiKaizen';
+        $title = 'A Escola AikiKaizen';
 
         /**
          * @method array setCss() Acrescenta os arquivos css nesta requisição

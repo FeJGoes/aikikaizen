@@ -15,7 +15,7 @@ class SobreNosController
         /**
          * @var $title innerText da TAG <title>
          */
-        $title = 'Sobre nós - Rio Claro';
+        $title = 'Sobre nós - AikiKaizen - Rio Claro';
 
         /**
          * @method array setCss() Acrescenta os arquivos css nesta requisição

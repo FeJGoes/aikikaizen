@@ -17,9 +17,12 @@ class Controller
         echo '<body>';
         require 'app/views/layout/header.php';
         require 'app/views/layout/offcanvas-nav.php';
-        foreach ($this->view as $view)
+        if ($this->view)
         {
-            require $view;
+            foreach ($this->view as $view)
+            {
+                require $view;
+            }
         }
         require 'app/views/layout/scripts.php';
         if ($footer)
@@ -29,6 +32,7 @@ class Controller
         echo '</body>';
         echo '</html>';
     }
+    
     public function renderError($title)
     {
         echo '<!DOCTYPE html>';
