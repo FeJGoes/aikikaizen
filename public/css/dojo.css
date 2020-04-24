@@ -1,0 +1,61 @@
+
+main {
+    width: calc(100% - 200px);
+    margin: 25px auto;
+}
+
+@media (max-width: 960px) {
+    main {
+        width: calc(100% - 50px);
+        margin: 25px auto;
+    }
+}
+
+.accordian ul {
+    display: flex;
+    list-style: none;
+    height: 70vh;
+}
+
+@media (max-width: 640px) {
+    .accordian ul {
+        flex-direction: column;
+        list-style: none;
+        height: 85vh;
+    }
+}
+
+.item {
+    position: relative;
+    width: 90%;
+    flex: 0.5;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+    transition: flex 0.8s ease;
+}
+
+.item:hover {
+    flex: 3;
+}
+
+.item-1 {
+    background-image: url("../images/aikido1.jpg");
+}
+
+.item-2 {
+    background-image: url("../images/aikido2.jpg");
+}
+
+.item-3 {
+    background-image: url("../images/aikido3.jpg");
+}
+
+.item-4 {
+    background-image: url("../images/aikido5.jpg");
+}
+
+.item-5 {
+    background-image: url("../images/aikido6.jpg");
+}

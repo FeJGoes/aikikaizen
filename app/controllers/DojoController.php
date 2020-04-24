@@ -20,7 +20,7 @@ class DojoController
         /**
          * @method array setCss() Acrescenta os arquivos css nesta requisição
          */
-        // $Controller->setCss(['contato.css']);
+        $Controller->setCss(['dojo.css']);
 
          /**
          * @method array setJs() Acrescenta os arquivos scripts Javascript nesta requisição
@@ -30,7 +30,7 @@ class DojoController
          /**
          * @method array setView() Acrescenta os arquivos de views nesta requisição
          */
-        $Controller->setView(['aikikaizen.php']);
+        $Controller->setView(['dojo.php']);
    
         $Controller->render($title,'');
     }

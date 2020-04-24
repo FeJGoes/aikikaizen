@@ -8,7 +8,7 @@
         <hr>
     </div>
     <div class="uk-flex uk-flex-row uk-flex-around uk-flex-top uk-flex-wrap">
-        <div id="contact-card" class="uk-width-1-3@s">
+        <div id="contact-card" class="uk-width-1-3@m uk-width-1-2@s">
             <div class="uk-flex uk-flex-between">
                 <h3 id="text-context-title" class="text-contact">Contato</h3>
                 <div>
@@ -33,7 +33,7 @@
             <h6 class="text-contact">Bairro - Santa Cruz</h6>
             <h6 class="text-contact">Rio Claro - SP</h6>
         </div>
-        <form id="contact-form" class="uk-flex uk-flex-column uk-flex-center uk-width-1-2@s">
+        <form id="contact-form" class="uk-flex uk-flex-column uk-flex-center uk-width-1-2@m uk-width-1-2@s">
             <div>
                 <label for="form-name" class="uk-form-label text-contact">*NOME</label>
                 <input type="text" id="form-name" class="uk-input uk-form-small" required>
