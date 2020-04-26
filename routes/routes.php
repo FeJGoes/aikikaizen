@@ -14,9 +14,19 @@ class Router
                'action'     => 'pageHome'
           );
 
-          $route['/aikido'] = array(
+          $route['/aikido-sobre'] = array(
                'controller' => 'AikidoController',
-               'action'     => 'pageAikido'
+               'action'     => 'pageSobre'
+          );
+
+          $route['/aikido-beneficios'] = array(
+               'controller' => 'AikidoController',
+               'action'     => 'pageBeneficios'
+          );
+
+          $route['/aikido-historia'] = array(
+               'controller' => 'AikidoController',
+               'action'     => 'pageHistoria'
           );
 
           $route['/aikikaizen'] = array(

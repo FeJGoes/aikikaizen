@@ -1,7 +1,7 @@
 <header>
     <div id="nav-banner">
         <a id="nav-logo" href="<?=HOST?>">
-            <img src="<?=IMGS_DIR?>kaizen-preto.png" alt="aikikaizenrc_logo">
+            <img src="<?=HOST.IMGS_DIR?>kaizen-preto.png" alt="aikikaizenrc_logo">
         </a>
         <div id="nav-title">
             <h5>AIKIDO</h5>
@@ -12,7 +12,7 @@
     <nav class="uk-visible@s">
         <ul>  
             <li <?= strstr($_SERVER['REQUEST_URI'],'/aikido') ?'class="active-link"': "" ?>>
-                <a class="navlink" href="<?=HOST.'aikido'?>">Sobre Aikido</a>
+                <a class="navlink" href="<?=HOST.'aikido-sobre'?>">aikido</a>
             </li>
             <li <?= strstr($_SERVER['REQUEST_URI'],'/aikikaizen') ?'class="active-link"': "" ?>>
                 <a class="navlink" href="<?=HOST.'aikikaizen'?>">aikikaizen</a>

@@ -15,15 +15,15 @@
     {
         foreach($this->css as $css)
         {
-            echo ' <link rel="stylesheet" type="text/css" href="'.$css.'?v='.filemtime($css).'">';
+            echo ' <link rel="stylesheet" type="text/css" href="'.HOST.$css.'?v='.filemtime($css).'">';
         };
     }
     
     ?>
 
-    <link rel="stylesheet" type="text/css" href="libs/uikit@3.2.3/css/uikit.min.css">
-    <script src="libs/uikit@3.2.3/js/uikit.min.js"></script>
-    <script src="libs/uikit@3.2.3/js/uikit-icons.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="<?=HOST?>libs/uikit@3.2.3/css/uikit.min.css">
+    <script src="<?=HOST?>libs/uikit@3.2.3/js/uikit.min.js"></script>
+    <script src="<?=HOST?>libs/uikit@3.2.3/js/uikit-icons.min.js"></script>
 
     <title><?=$title?></title>
 </head>

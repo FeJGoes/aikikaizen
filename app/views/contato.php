@@ -1,7 +1,11 @@
 <main>
 
     <div id="contact-quotes" class="uk-flex uk-flex-middle uk-flex-column uk-width-4-5 uk-margin-auto">
-        <h4 class="uk-width-4-5 uk-margin-auto uk-margin-remove-vertical uk-animation-slide-left"><span uk-icon="icon: quote-right; ratio: 2.5"></span> Quem vence alguém é um vencedor, mas quem vence a si mesmo é invencível</h4>
+        <div class="uk-flex uk-flex-around uk-flex-middle uk-width-4-5 uk-margin-auto uk-margin-remove-vertical uk-animation-slide-left">
+            <span uk-icon="icon: quote-right; ratio: 3"></span> 
+            <h4 class="uk-width-4-5 uk-text-center">Quem vence alguém é um vencedor, mas quem vence a si mesmo é invencível</h4>
+        </div>
+        
         <div class="uk-flex uk-flex-right uk-margin-remove-top uk-animation-slide-right">
             <small id="contact-quotes-author" class="uk-text-right text-contact">Morihei Ueshiba (Fundador do Aikido)</small>
         </div>

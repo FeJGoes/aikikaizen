@@ -1,2 +1,3 @@
-<!-- img background  -->
-<!-- <main id="background-home"></main> -->
+<main id="home-background">
+    <!-- difined css background  -->
+</main>

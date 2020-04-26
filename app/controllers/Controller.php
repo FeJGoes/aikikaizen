@@ -19,6 +19,7 @@ class Controller
         require 'app/views/layout/offcanvas-nav.php';
         if ($this->view)
         {
+            
             foreach ($this->view as $view)
             {
                 require $view;

@@ -42,6 +42,29 @@ main {
     justify-content: center;
 }
 
+#submenu-aikido li a {
+    color: var(--base-color-title) !important;
+    text-decoration: none;
+}
+
 .active-submenu {
     border-bottom: solid .2px var(--base-color-title);
+}
+
+.section-img {
+    width: 60%;
+    height: 100%;
+    min-height: 400px;
+    object-fit: cover;
+    object-position: 10%;
+    margin: 0 50px;
+}
+
+.section-text {
+    overflow: auto;
+    max-height: 350px;
+}
+
+.section-title {
+    text-transform: uppercase;
 }

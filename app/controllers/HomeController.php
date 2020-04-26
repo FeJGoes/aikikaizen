@@ -30,7 +30,7 @@ class HomeController
          /**
          * @method array setView() Acrescenta os arquivos de views nesta requisição
          */
-        // $Controller->setView(['home.php']);
+        $Controller->setView(['home.php']);
    
         $Controller->render($title,'',false);
     }
