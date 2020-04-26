@@ -19,7 +19,6 @@ class Controller
         require 'app/views/layout/offcanvas-nav.php';
         if ($this->view)
         {
-            
             foreach ($this->view as $view)
             {
                 require $view;
@@ -40,12 +39,29 @@ class Controller
         echo '<html lang="pt-BR">';
         require 'app/views/layout/head.php';
         echo '<body>';
-        foreach ($this->view as $view)
+        if ($this->view)
         {
-            require $view;
-        } 
+            foreach ($this->view as $view)
+            {
+                require $view;
+            }
+        }
         echo '</body>';
         echo '</html>';       
+    }
+
+    public function ajaxView($title) 
+    {
+        if ($this->view)
+        {
+            foreach ($this->view as $view)
+            {
+                require $view;
+            }
+        }
+        $return['view']  = ob_get_clean();
+        $return['title'] = $title;
+        echo json_encode($return);        
     }
 
     public function joinBaseForEachPath (array $list, string $base)

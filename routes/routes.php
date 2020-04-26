@@ -14,6 +14,11 @@ class Router
                'action'     => 'pageHome'
           );
 
+          $route['/aikido'] = array(
+               'controller' => 'AikidoController',
+               'action'     => 'pageAikido'
+          );
+
           $route['/aikido-sobre'] = array(
                'controller' => 'AikidoController',
                'action'     => 'pageSobre'

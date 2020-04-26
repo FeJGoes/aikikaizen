@@ -20,12 +20,12 @@ class AikidoController
         /**
          * @method array setCss() Acrescenta os arquivos css nesta requisição
          */
-        $Controller->setCss(['aikido.css']);
+        $Controller->setCss(['aikido.css', 'loader.css']);
 
          /**
          * @method array setJs() Acrescenta os arquivos scripts Javascript nesta requisição
          */
-        // $Controller->setJs(['header.js']);
+        $Controller->setJs(['aikido.js']);
 
          /**
          * @method array setView() Acrescenta os arquivos de views nesta requisição
@@ -51,14 +51,14 @@ class AikidoController
          /**
          * @method array setJs() Acrescenta os arquivos scripts Javascript nesta requisição
          */
-        // $Controller->setJs(['aikido.js']);
+        $Controller->setJs(['aikido.js']);
 
          /**
          * @method array setView() Acrescenta os arquivos de views nesta requisição
          */
-        $Controller->setView(['aikido/aikido-submenu.php','aikido/sobre.php']);
+        $Controller->setView(['aikido/sobre.php']);
    
-        $Controller->render($title,'');
+        $Controller->ajaxView($title);
     }
 
     public function pageBeneficios ()
@@ -77,14 +77,14 @@ class AikidoController
          /**
          * @method array setJs() Acrescenta os arquivos scripts Javascript nesta requisição
          */
-        // $Controller->setJs(['header.js']);
+        $Controller->setJs(['aikido.js']);
 
          /**
          * @method array setView() Acrescenta os arquivos de views nesta requisição
          */
-        $Controller->setView(['aikido/aikido-submenu.php','aikido/beneficios.php']);
+        $Controller->setView(['aikido/beneficios.php']);
    
-        $Controller->render($title,'');
+        $Controller->ajaxView($title);
     }
 
     public function pageHistoria ()
@@ -103,13 +103,13 @@ class AikidoController
          /**
          * @method array setJs() Acrescenta os arquivos scripts Javascript nesta requisição
          */
-        // $Controller->setJs(['header.js']);
+        $Controller->setJs(['aikido.js']);
 
          /**
          * @method array setView() Acrescenta os arquivos de views nesta requisição
          */
-        $Controller->setView(['aikido/aikido-submenu.php','aikido/historia.php']);
+        $Controller->setView(['aikido/historia.php']);
    
-        $Controller->render($title,'');
+        $Controller->ajaxView($title);
     }
 }

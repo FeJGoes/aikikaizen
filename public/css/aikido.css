@@ -60,6 +60,15 @@ main {
     margin: 0 50px;
 }
 
+  
+@media (max-width: 960px) 
+{
+    .section-img {
+        width: 100%;
+        margin: 0;
+     }
+}
+
 .section-text {
     overflow: auto;
     max-height: 350px;
@@ -67,4 +76,16 @@ main {
 
 .section-title {
     text-transform: uppercase;
+    margin: 1px 5px;
+}
+
+.section-subtitle {
+    margin: 10px 5px;
+}
+
+
+.submenu-aikido-item:hover {
+    color: var(--base-color-text) !important;
+    border-bottom: solid .2px var(--base-color-text);
+    cursor: pointer;
 }

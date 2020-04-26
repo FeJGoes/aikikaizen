@@ -4,10 +4,11 @@
     <meta name="theme-color" content="#000">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" href="<?=HOST.IMGS_DIR."aikido-ico.ico"?>">
-    <link rel="stylesheet" type="text/css" href="<?=HOST.CSS_DIR.'logo.css?v='.filemtime(CSS_DIR.'logo.css')?>">
-    <link rel="stylesheet" type="text/css" href="<?=HOST.CSS_DIR.'burger.css?v='.filemtime(CSS_DIR.'burger.css')?>">
-    <link rel="stylesheet" type="text/css" href="<?=HOST.CSS_DIR.'nav.css?v='.filemtime(CSS_DIR.'nav.css')?>">
-    <link rel="stylesheet" type="text/css" href="<?=HOST.CSS_DIR.'footer.css?v='.filemtime(CSS_DIR.'footer.css')?>">
+    <link rel="stylesheet" type="text/css" href="<?=HOST.CSS_DIR.'global/global.css?v='.filemtime(CSS_DIR.'global/global.css')?>">
+    <link rel="stylesheet" type="text/css" href="<?=HOST.CSS_DIR.'global/logo.css?v='.filemtime(CSS_DIR.'global/logo.css')?>">
+    <link rel="stylesheet" type="text/css" href="<?=HOST.CSS_DIR.'global/burger.css?v='.filemtime(CSS_DIR.'global/burger.css')?>">
+    <link rel="stylesheet" type="text/css" href="<?=HOST.CSS_DIR.'global/header.css?v='.filemtime(CSS_DIR.'global/header.css')?>">
+    <link rel="stylesheet" type="text/css" href="<?=HOST.CSS_DIR.'global/footer.css?v='.filemtime(CSS_DIR.'global/footer.css')?>">
 
     <?php
 

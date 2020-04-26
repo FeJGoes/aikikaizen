@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css?family=Barlow+Condensed&display=swap');
+:root
+{
+    --base-color-blue: #188cdf;
+    --base-color-yellow: #FABB4E;
+    --base-color-background: #282a36;
+    --base-color-sec-background: #30475e	;
+    --base-color-title: #44475a;
+    --base-color-text: #f8f8f2;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.text-\@l {
+    margin: 1px 5px;
+    text-align: left;
+}
+
+.text-\@r {
+    margin: 1px 5px;
+    text-align: right;
+}
+
+@media (max-width: 960px) 
+{
+    .text-\@m-\@l {
+        text-align: left;
+   }
+    .text-\@m-\@r {
+        text-align: right;
+   }
+}
+@media (max-width: 400px) 
+{
+    .text-\@s-\@l {
+        text-align: left;
+   }
+    .text-\@s-\@r {
+        text-align: right;
+   }
+}

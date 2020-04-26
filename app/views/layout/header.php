@@ -12,7 +12,7 @@
     <nav class="uk-visible@s">
         <ul>  
             <li <?= strstr($_SERVER['REQUEST_URI'],'/aikido') ?'class="active-link"': "" ?>>
-                <a class="navlink" href="<?=HOST.'aikido-sobre'?>">aikido</a>
+                <a class="navlink" href="<?=HOST.'aikido'?>">aikido</a>
             </li>
             <li <?= strstr($_SERVER['REQUEST_URI'],'/aikikaizen') ?'class="active-link"': "" ?>>
                 <a class="navlink" href="<?=HOST.'aikikaizen'?>">aikikaizen</a>

@@ -1,20 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Barlow+Condensed&display=swap');
-:root
-{
-    --base-color-blue: #188cdf;
-    --base-color-yellow: #FABB4E;
-    --base-color-background: #282a36;
-    --base-color-sec-background: #30475e	;
-    --base-color-title: #44475a;
-    --base-color-text: #f8f8f2;
-}
-
-*
-{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 header
 {
