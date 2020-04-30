@@ -1,61 +1,61 @@
 
-main {
+#dojo-content {
     width: calc(100% - 200px);
-    margin: 25px auto;
+    margin: 100px auto;
 }
 
 @media (max-width: 960px) {
-    main {
+    #dojo-content {
         width: calc(100% - 50px);
         margin: 25px auto;
     }
 }
 
-.accordian ul {
-    display: flex;
-    list-style: none;
-    height: 70vh;
+
+[img-ajust] {
+    object-fit: cover;
+    object-position: center center;
 }
 
-@media (max-width: 640px) {
-    .accordian ul {
-        flex-direction: column;
-        list-style: none;
-        height: 85vh;
+
+#schedule-container {
+    width: 25%;
+}
+
+@media (max-width: 960px) {
+    #schedule-container {
+        width: 50%;
     }
 }
 
-.item {
-    position: relative;
-    width: 90%;
-    flex: 0.5;
-    height: 100%;
-    background-position: center;
-    background-size: cover;
-    background-repeat: none;
-    transition: flex 0.8s ease;
+@media (max-width: 400px) {
+    #schedule-container {
+        width: 95%;
+    }
 }
 
-.item:hover {
-    flex: 3;
+#class-schedule :nth-child(n) {
+    margin: 0;
+    padding: 0;
+    text-align: center;
 }
 
-.item-1 {
-    background-image: url("../images/aikido1.jpg");
+#class-schedule [uk-icon=clock] {
+    color: var(--base-color-yellow);
 }
-
-.item-2 {
-    background-image: url("../images/aikido2.jpg");
+#class-schedule strong,
+#class-schedule span {
+    font-size: small;
 }
-
-.item-3 {
-    background-image: url("../images/aikido3.jpg");
+#class-schedule-title {
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
-
-.item-4 {
-    background-image: url("../images/aikido5.jpg");
-}
-
-.item-5 {
-    background-image: url("../images/aikido6.jpg");
+#class-schedule em {
+    color: var(--base-color-blue);
+    text-transform: uppercase;
+    font-size: x-small;
 }

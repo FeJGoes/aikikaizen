@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../libs/uikit@3.2.3/css/uikit.min.css">
+    <script src="../libs/uikit@3.2.3/js/uikit.min.js"></script>
+    <script src="../libs/uikit@3.2.3/js/uikit-icons.min.js"></script>
+    <style>
+        @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,700,800");
+        
+        :root {
+            --base-color-blue: #188cdf;
+            --base-color-yellow: #FABB4E;
+            --base-color-background: #282a36;
+            --base-color-sec-background: #30475e;
+            --base-color-title: #44475a;
+            --base-color-text: #f8f8f2;
+        }
+
+        [img-ajust] {
+            object-fit: cover;
+            object-position: center center;
+        }
+
+       
+        #schedule-container {
+            width: 25%;
+        }
+
+        @media (max-width: 960px) {
+            #schedule-container {
+                width: 50%;
+            }
+        }
+
+        @media (max-width: 400px) {
+            #schedule-container {
+                width: 95%;
+            }
+        }
+   
+        #class-schedule :nth-child(n) {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        #class-schedule [uk-icon=clock] {
+            color: var(--base-color-yellow);
+        }
+        #class-schedule strong,
+        #class-schedule span {
+            font-size: small;
+        }
+        #class-schedule-title {
+            text-transform: uppercase;
+            text-align: center;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        #class-schedule em {
+            color: var(--base-color-blue);
+            text-transform: uppercase;
+            font-size: x-small;
+        }
+
+       
+    </style>
+    <title></title>
+</head>
+<body>
+    <main>
+        <div class="uk-flex uk-flex-wrap uk-flex-center uk-flex-middle">
+            <div id="schedule-container">
+                <strong id="class-schedule-title">Horários de Treinos</strong>
+                <dl id="class-schedule" class="uk-description-list uk-description-list-divider">
+                    <dt><strong>Segunda-feira</strong></dt>
+                    <dd>
+                        <div>
+                            <span uk-icon="clock"></span>
+                            <span>18h30min</span>
+                            <span>--</span>
+                            <span uk-icon="clock"></span>
+                            <span>19h20min</span>
+                        </div>
+                    </dd>
+                    <dt><strong>Terça-feira</strong></dt>
+                    <dd>
+                        <div>
+                            <span uk-icon="clock"></span>
+                            <span>18h30min</span>
+                            <span>--</span>
+                            <span uk-icon="clock"></span>
+                            <span>19h20min</span>
+                        </div>
+                    </dd>
+                    <dt><strong>Quarta-feira</strong></dt>
+                    <dd><em>sem treino</em></dd>
+                    <dt><strong>Quinta-feira</strong></dt>
+                    <dd>
+                        <div>
+                            <span uk-icon="clock"></span>
+                            <span>18h30min</span>
+                            <span>--</span>
+                            <span uk-icon="clock"></span>
+                            <span>19h20min</span>
+                        </div>
+                    </dd>
+                    <dt><strong>Sexta-feira</strong></dt>
+                    <dd><em>sem treino</em></dd>
+                    <dt><strong>Sábado</strong></dt>
+                    <dd>
+                        <div>
+                            <span uk-icon="clock"></span>
+                            <span>09h30min</span>
+                            <span>--</span>
+                            <span uk-icon="clock"></span>
+                            <span>10h20min</span>
+                        </div>
+                    </dd>
+                </dl>
+            </div>
+            <div class="uk-width-1-2@m uk-width-1-2@s">
+                <div class="uk-position-relative uk-visible-toggle uk-dark" tabindex="-1" uk-slideshow="autoplay: true; autoplay-interval: 4500; animation: push; pause-on-hover: true">
+            
+                    <ul class="uk-slideshow-items">
+                        <li>
+                            <img src="../public/images/aikido10.jpg" img-ajust>
+                            <div class="uk-overlay uk-overlay-primary uk-position-right uk-text-center uk-transition-slide-right uk-width-medium">
+                                <h3 class="uk-margin-remove">Left</h3>
+                                <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="../public/images/aikido12.jpg" img-ajust>
+                            <div class="uk-overlay uk-overlay-primary uk-position-bottom uk-text-center uk-transition-slide-bottom">
+                                <h3 class="uk-margin-remove">Bottom</h3>
+                                <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="../public/images/aikido11.jpg" img-ajust>
+                            <div class="uk-overlay uk-overlay-primary uk-position-left uk-text-center uk-transition-slide-left uk-width-medium">
+                                <h3 class="uk-margin-remove">Left</h3>
+                                <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="../public/images/aikido12.jpg" img-ajust>
+                            <div class="uk-overlay uk-overlay-primary uk-position-top uk-text-center uk-transition-slide-top">
+                                <h3 class="uk-margin-remove">Top</h3>
+                                <p class="uk-margin-remove">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="uk-slideshow-nav uk-dotnav uk-flex-center uk-margin"></ul>
+                
+                    <a class="uk-slidenav-large uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+                    <a class="uk-slidenav-large uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+                
+                </div>
+            </div>
+        </div>
+    </main>
+    
+</body>
+</html>
