@@ -8,7 +8,7 @@
                     <div>
                         <span uk-icon="clock"></span>
                         <span>18h30min</span>
-                        <span>--</span>
+                        <span> à </span>
                         <span uk-icon="clock"></span>
                         <span>19h20min</span>
                     </div>
@@ -18,7 +18,7 @@
                     <div>
                         <span uk-icon="clock"></span>
                         <span>18h30min</span>
-                        <span>--</span>
+                        <span> à </span>
                         <span uk-icon="clock"></span>
                         <span>19h20min</span>
                     </div>
@@ -30,7 +30,7 @@
                     <div>
                         <span uk-icon="clock"></span>
                         <span>18h30min</span>
-                        <span>--</span>
+                        <span> à </span>
                         <span uk-icon="clock"></span>
                         <span>19h20min</span>
                     </div>
@@ -42,14 +42,14 @@
                     <div>
                         <span uk-icon="clock"></span>
                         <span>09h30min</span>
-                        <span>--</span>
+                        <span> à </span>
                         <span uk-icon="clock"></span>
                         <span>10h20min</span>
                     </div>
                 </dd>
             </dl>
         </div>
-        <div class="uk-width-1-2@m uk-width-1-2@s">
+        <div id="slideshow-dojo">
             <div class="uk-position-relative uk-visible-toggle uk-dark" tabindex="-1" uk-slideshow="autoplay: true; autoplay-interval: 4500; animation: push; pause-on-hover: true">
 
                 <ul class="uk-slideshow-items">

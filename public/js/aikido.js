@@ -1,14 +1,25 @@
-function callView (element)
+/***************************** VÁRIAVEIS **************************************/
+/******************************************************************************/
+
+/****************************** EVENTOS ***************************************/
+/******************************************************************************/
+document.body.onload = () => callView(location.origin + "/site-aikikaizen/aikido-sobre")
+
+/****************************** FUNÇÕES ***************************************/
+/******************************************************************************/
+function callView (URLaccessed)
 {
     let parent = document.getElementsByClassName('submenu-aikido-item')
-    let URLaccessed = element.dataset.href
-
+    
     for (child of parent)
     {
         child.classList.remove('active-submenu')
+        if(child.dataset.href == URLaccessed)
+        {
+            child.classList.add('active-submenu')
+        }
     }
 
-    element.classList.add('active-submenu')
 
     fetch(URLaccessed)
     .then(res => res.json())

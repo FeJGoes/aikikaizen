@@ -1,6 +1,7 @@
 main {
     width: calc(100% - 200px);
     margin: 15px auto;
+    min-height: calc(100vh - 150px);
 }
   
 @media (max-width: 960px) 
@@ -82,7 +83,6 @@ main {
 .section-subtitle {
     margin: 10px 5px;
 }
-
 
 .submenu-aikido-item:hover {
     color: var(--base-color-text) !important;

@@ -20,7 +20,7 @@ class SobreNosController
         /**
          * @method array setCss() Acrescenta os arquivos css nesta requisição
          */
-        // $Controller->setCss(['contato.css']);
+        $Controller->setCss(['sobre-nos.css']);
 
          /**
          * @method array setJs() Acrescenta os arquivos scripts Javascript nesta requisição

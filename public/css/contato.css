@@ -1,6 +1,7 @@
 main {
   width: calc(100% - 200px);
   margin: 0 auto;
+  min-height: calc(100vh - 150px);
 }
 
 @media (max-width: 960px) 
@@ -10,10 +11,6 @@ main {
     margin: 0 auto;
   }
   
-}
-
-#contact-quotes {
-  margin-top: 50px !important;
 }
 
 @media (max-width: 960px) 

@@ -1,16 +1,23 @@
 
 #dojo-content {
     width: calc(100% - 200px);
-    margin: 100px auto;
+    margin: 25px auto;
+    min-height: calc(100vh - 150px);
 }
 
 @media (max-width: 960px) {
     #dojo-content {
-        width: calc(100% - 50px);
+        width: calc(100% - 15px);
         margin: 25px auto;
     }
 }
 
+@media (max-width: 600px) {
+    #dojo-content {
+        width: calc(100% - 2px);
+        margin: 25px auto;
+    }
+}
 
 [img-ajust] {
     object-fit: cover;
@@ -43,10 +50,12 @@
 #class-schedule [uk-icon=clock] {
     color: var(--base-color-yellow);
 }
+
 #class-schedule strong,
 #class-schedule span {
     font-size: small;
 }
+
 #class-schedule-title {
     text-transform: uppercase;
     text-align: center;
@@ -54,8 +63,26 @@
     display: flex;
     justify-content: center;
 }
+
 #class-schedule em {
     color: var(--base-color-blue);
     text-transform: uppercase;
     font-size: x-small;
+}
+
+#slideshow-dojo {
+    width: 75%;
+}
+
+@media (max-width: 960px) {
+    #slideshow-dojo {
+        width: 80%;
+    }
+}
+
+@media (max-width: 600px) {
+    #slideshow-dojo {
+        width: 100%;
+        margin-top: 10px;
+    }
 }

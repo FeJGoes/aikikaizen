@@ -17,18 +17,16 @@ class Controller
         echo '<body>';
         require 'app/views/layout/header.php';
         require 'app/views/layout/offcanvas-nav.php';
+
         if ($this->view)
-        {
             foreach ($this->view as $view)
-            {
                 require $view;
-            }
-        }
+
         require 'app/views/layout/scripts.php';
+
         if ($footer)
-        {
             require 'app/views/layout/footer.php';
-        }
+
         echo '</body>';
         echo '</html>';
     }
@@ -39,27 +37,18 @@ class Controller
         echo '<html lang="pt-BR">';
         require 'app/views/layout/head.php';
         echo '<body>';
+
         if ($this->view)
-        {
             foreach ($this->view as $view)
-            {
                 require $view;
-            }
-        }
+
         echo '</body>';
         echo '</html>';       
     }
 
-    public function ajaxView($title) 
+    public function ajaxView(string $title) 
     {
-        if ($this->view)
-        {
-            foreach ($this->view as $view)
-            {
-                require $view;
-            }
-        }
-        $return['view']  = ob_get_clean();
+        $return['view']  = $this->getOutputBuffer($this->view);
         $return['title'] = $title;
         echo json_encode($return);        
     }
@@ -103,4 +92,14 @@ class Controller
         return $this->view;
     }
 
+    public function getOutputBuffer(array $views) :string
+    {
+        ob_start();
+        if ($views)
+            foreach ($views as $view)
+                require $view;
+        $res = ob_get_contents();
+        ob_clean();
+        return $res;
+    }
 }
