@@ -25,21 +25,20 @@ main {
     }
 }
 
-.item {
+.item img{
     position: relative;
     width: 90%;
     flex: 0.5;
     height: 100%;
-    background-position: center;
-    background-size: cover;
-    background-repeat: none;
+    object-fit: cover;
+    object-position: center center;
     transition: flex 0.8s ease;
 }
 
-.item:hover {
+.item img:hover {
     flex: 3;
 }
-
+/* 
 .item-1 {
     background-image: url("../images/aikido1.jpg");
 }
@@ -58,4 +57,4 @@ main {
 
 .item-5 {
     background-image: url("../images/aikido6.jpg");
-}
+} */

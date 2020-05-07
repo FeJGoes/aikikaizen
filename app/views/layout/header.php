@@ -14,9 +14,9 @@
             <li <?= strstr($_SERVER['REQUEST_URI'],'/aikido') ?'class="active-link"': "" ?>>
                 <a class="navlink" href="<?=HOST.'aikido'?>">aikido</a>
             </li>
-            <li <?= strstr($_SERVER['REQUEST_URI'],'/aikikaizen') ?'class="active-link"': "" ?>>
+            <!-- <li <?= strstr($_SERVER['REQUEST_URI'],'/aikikaizen') ?'class="active-link"': "" ?>>
                 <a class="navlink" href="<?=HOST.'aikikaizen'?>">aikikaizen</a>
-            </li>
+            </li> -->
             <li <?= strstr($_SERVER['REQUEST_URI'],'/dojo') ?'class="active-link"': "" ?>>
                 <a class="navlink" href="<?=HOST.'dojo'?>">dojo</a>
             </li>
