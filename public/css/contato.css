@@ -1,17 +1,18 @@
-main {
+#contact-content {
   width: calc(100% - 200px);
   margin: 0 auto;
-  min-height: calc(100vh - 150px);
+  min-height: calc(100vh - 80px);
 }
 
 @media (max-width: 960px) 
 {
-  main {
+  #contact-content {
     width: calc(100% - 50px);
     margin: 0 auto;
   }
   
 }
+
 
 @media (max-width: 960px) 
 {

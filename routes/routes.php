@@ -54,10 +54,8 @@ class Router
                'action'     => 'pageContato'
           );
           
-          if (is_array($route[$path])) 
-          {
+          if (array_key_exists($path,$route)) 
                $this->run($route[$path]['controller'], $route[$path]['action']);
-          }
           else 
           {
                require CONTROLLERS_DIR.'ErrorController.php';

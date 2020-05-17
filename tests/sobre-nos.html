@@ -1,4 +1,130 @@
-<main id="about-content">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../libs/uikit@3.2.3/css/uikit.min.css">
+    <script src="../libs/uikit@3.2.3/js/uikit.min.js"></script>
+    <script src="../libs/uikit@3.2.3/js/uikit-icons.min.js"></script>
+    <style>
+        @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,700,800");
+        @import url("https://fonts.googleapis.com/css?family=Open+Sans");
+
+        :root {
+            --base-color-blue: #188cdf;
+            --base-color-yellow: #FABB4E;
+            --base-color-background: #282a36;
+            --base-color-sec-background: #30475e;
+            --base-color-title: #44475a;
+            --base-color-text: #f8f8f2;
+        }
+
+        #about-content {
+            width: calc(100% - 200px);
+            margin: 25px auto;
+        }
+
+        @media (max-width: 960px) {
+            #about-content {
+                width: calc(100% - 50px);
+                margin: 25px auto;
+            }
+        }
+
+        .container {
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        .gallery-wrap {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height: 70vh;
+        }
+
+        @media (max-width: 600px) {
+            .gallery-wrap {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                height: 70vh;
+            }
+        }
+
+        .item {
+            position: relative;
+            flex: 1;
+            height: 100%;
+            transition: flex 0.8s ease;
+        }
+
+        .item:hover {
+            flex: 2;
+        }
+
+        .item-img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            object-position: center center;
+        }
+
+        .item-title {
+            text-transform: uppercase;
+            margin: 0;
+        }
+
+        .item-description {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        .item-paragraph {
+            margin: 0 35px;
+            text-align: center;
+            text-indent: 10px;
+            opacity: 0;
+            height: 0%;
+            overflow: hidden;
+            visibility: hidden;
+            transition: 
+                height .8s ease-in-out, 
+                opacity 2s ease-in-out .5s, 
+                visibility .1s;
+        }
+        
+        .item-description:hover .item-paragraph {
+            margin-top: 10px;
+            height: 70%;
+            overflow: visible;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .card-img {
+            border-radius: 50%;
+            min-width: 250px;
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+            object-position: center center;
+        }
+
+        </style>
+    <title>sobre nos</title>
+</head>
+
+<body>
+    <main id="about-content">
         <div class="container">
             <div class="gallery-wrap">
                 <div class="item ">
@@ -9,7 +135,7 @@
                     </div>
                 </div>
                 <div class="item ">
-                    <img class="item-img" src="<?=HOST.IMGS_DIR?>aikido5.jpg">
+                    <img class="item-img" src="../public/images/aikido5.jpg">
                 </div>
             </div>
         </div>
@@ -17,7 +143,7 @@
         <div class="container">
             <div class="gallery-wrap">
                 <div class="item ">
-                    <img class="item-img" src="<?=HOST.IMGS_DIR?>aikido10.jpg">
+                    <img class="item-img" src="../public/images/aikido10.jpg">
                 </div>
                 <div class="item ">
                     <div class="item-description">
@@ -29,14 +155,11 @@
             </div>
         </div>
         <hr>
-
         <h3 class="uk-text-center">Membros do Dojo</h3>
-
-        <div class="uk-margin-xlarge-bottom hall-cards">
-
+        <div class="hall-cards">
             <div class="uk-flex uk-flex-around uk-margin">
                 <div class="uk-flex uk-flex-column uk-flex-middle uk-margin-medium-left uk-margin-medium-right">
-                    <img class="card-img" src="<?=HOST.IMGS_DIR?>fabricio.jpg">
+                    <img class="card-img" src="../public/images/fabricio.jpg">
                     <div class="uk-flex uk-flex-column uk-margin-large-top">
                         <h5 class="uk-text-center uk-margin-remove">Fabrício Trivelato</h5>
                         <h6 class="uk-text-center uk-margin-remove">Yodan Aikido</h6>
@@ -45,10 +168,9 @@
                     </div>
                 </div>
             </div>
-            
             <div class="uk-flex uk-flex-around uk-margin-large-top">
                 <div class="uk-flex uk-flex-column uk-flex-middle uk-margin-medium-left uk-margin-medium-right">
-                    <img class="card-img" src="<?=HOST.IMGS_DIR?>helio.jpg">
+                    <img class="card-img" src="../public/images/helio.jpg">
                     <div class="uk-flex uk-flex-column uk-margin-large-top">
                         <h5 class="uk-text-center uk-margin-remove">Hélio Yoshiyuki Hoshina</h5>
                         <h6 class="uk-text-center uk-margin-remove">Shodan Aikido</h6>
@@ -58,7 +180,7 @@
                 </div>
                 
                 <div class="uk-flex uk-flex-column uk-flex-middle uk-margin-medium-left uk-margin-medium-right">
-                    <img class="card-img" src="<?=HOST.IMGS_DIR?>helio.jpg">
+                    <img class="card-img" src="../public/images/helio.jpg">
                     <div class="uk-flex uk-flex-column uk-margin-large-top">
                         <h5 class="uk-text-center uk-margin-remove">Hélio Yoshiyuki Hoshina</h5>
                         <h6 class="uk-text-center uk-margin-remove">Shodan Aikido</h6>
@@ -68,7 +190,7 @@
                 </div>
 
                 <div class="uk-flex uk-flex-column uk-flex-middle uk-margin-medium-left uk-margin-medium-right">
-                    <img class="card-img" src="<?=HOST.IMGS_DIR?>helio.jpg">
+                    <img class="card-img" src="../public/images/helio.jpg">
                     <div class="uk-flex uk-flex-column uk-margin-large-top">
                         <h5 class="uk-text-center uk-margin-remove">Hélio Yoshiyuki Hoshina</h5>
                         <h6 class="uk-text-center uk-margin-remove">Shodan Aikido</h6>
@@ -79,3 +201,7 @@
             </div>
         </div>
     </main>
+
+</body>
+
+</html>
