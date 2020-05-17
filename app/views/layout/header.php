@@ -1,4 +1,4 @@
-<header>
+<header id="main-header">
     <div id="nav-banner">
         <a id="nav-logo" href="<?=HOST?>">
             <img src="<?=HOST.IMGS_DIR?>kaizen-preto.png" alt="aikikaizenrc_logo">

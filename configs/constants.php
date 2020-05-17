@@ -10,3 +10,4 @@ define('MODELS_DIR'     ,'app/models/');
 define('VIEWS_DIR'      ,'app/views/');
 define('SERVICES_DIR'   ,'app/services/');
 
+require 'google-api.php';
